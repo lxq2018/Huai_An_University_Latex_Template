@@ -1,0 +1,2 @@
+# Huai_An_University_Latex_Template
+淮安大学本科毕业设计latex模板
