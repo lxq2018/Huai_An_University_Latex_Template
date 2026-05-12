@@ -1,0 +1,140 @@
+% 软件：CTeX套装v3.0.216.3：https://mirrors.tuna.tsinghua.edu.cn/ctex/3.0/
+% 编译：XeLaTeX
+% 编码：UTF-8
+% 模板：淮安大学毕业设计（论文）任务书
+% 制作：刘绪庆
+% 版本：v1.0
+
+\documentclass[12pt]{../setup/hyit_S-1-2}
+
+%==========================================%
+%           任务书的封面信息               %
+%==========================================%
+\def\YourName{某某某}        % 填写本人姓名
+\def\YourNumber{12位数的学号}% 填写本人学号
+\def\YourCollege{数理学院}   % 填写所在学院
+\def\YourMajor{金融数学}     % 填写所学专业
+\def\PaperTitleLa{标题第一行}% 标题的第一行
+\def\PaperTitleLb{标题第二行}% 标题的第二行
+\def\FrYear{2026}            % 论文起始年
+\def\FrMonth{01}             % 论文起始月
+\def\FrDay{02}               % 论文起始日
+\def\ToYear{2026}            % 论文结束年
+\def\ToMonth{06}             % 论文结束月
+\def\ToDay{02}               % 论文结束日
+\def\PaperSite{淮安大学}     % 毕设开展地点
+\def\SupervisorNameIn{某某某}% 校内导师姓名
+\def\SupervisorNameOut{/}    % 校外导师姓名
+\def\MajorResp{某某某}       % 专业负责人
+\def\ProPlanYear{2026}       % 任务书发布年
+\def\ProPlanMonth{01}        % 任务书发布月
+\def\ProPlanDay{02}          % 任务书发布日
+\def\LastPageNum{3}          % 最后一页页码
+%==========================================%
+
+%====================================%
+%  以下第1至4项，建议尽量接近满2+页  %
+%  原因：latex单元格不支持格内跨页！ %
+%  注：前三项仅替换 < > 部分的内容！ %
+%====================================%
+
+% 第1项：本课题应达目的
+\def\PlanPurpose{
+  <第一段内容……> % 可修改部分
+  \par\hspace*{1.75em}
+  <第二段内容……> % 可修改部分
+}
+
+% 第2项：任务内容与要求
+\def\PlanContReq{
+  <第一段内容……> % 可修改部分
+  \par\hspace*{1.75em}
+  <第二段内容……> % 可修改部分
+}
+
+% 第3项：课题成果的要求
+\def\OutcomeReq{
+  设计内容要实现任务书中下达的要求。
+  \par\hspace*{1.75em}
+  论文书写要求层次清楚、说理透彻、简明扼要。
+  \par\hspace*{1.75em}
+  毕业设计（论文）总字数原则上不少于10000字。\textcolor{red}{（根据专业具体要求自行修改）}
+  \par\hspace*{1.75em}
+  原则上，知网查重重复率：理工类论文$\leqslant 30\%$，
+  经管文法类论文$\leqslant 25\%$；
+  推荐校优秀毕业设计（论文）$\leqslant 15\%$。\textcolor{red}{（按照专业选填）}
+}
+
+% 第4项：主要参考文献：原则上≥10篇，其中外文≥2篇；标点符号为“Times New Roman”，其后加1空格！
+\def\MainRef{
+  <[1] ......> % 可修改部分
+  \par
+  <[2] ......> % 可修改部分
+  \par
+  <[3] ......> % 可修改部分
+}
+
+% 第5项：进度计划
+
+% 01
+\def\FrYearA{2025}\def\FrMonthA{12}\def\FrDayA{20}
+\def\ToYearA{2026}\def\ToMonthA{01}\def\ToDayA{14}
+\def\ContentA{查阅资料，明确任务，外文资料翻译}
+
+% 02
+\def\FrYearB{2026}\def\FrMonthB{01}\def\FrDayB{14}
+\def\ToYearB{2026}\def\ToMonthB{02}\def\ToDayB{20}
+\def\ContentB{学生查资料，翻译外文文献，撰写开题报告}
+
+% 03
+\def\FrYearC{2026}\def\FrMonthC{02}\def\FrDayC{21}
+\def\ToYearC{2026}\def\ToMonthC{03}\def\ToDayC{06}
+\def\ContentC{指导教师指导学生修改开题报告.}
+
+% 04
+\def\FrYearD{2026}\def\FrMonthD{03}\def\FrDayD{07}
+\def\ToYearD{2026}\def\ToMonthD{03}\def\ToDayD{07}
+\def\ContentD{开题答辩}
+
+% 05
+\def\FrYearE{2026}\def\FrMonthE{03}\def\FrDayE{23}
+\def\ToYearE{2026}\def\ToMonthE{03}\def\ToDayE{29}
+\def\ContentE{前期工作检查}
+
+% 06
+\def\FrYearF{2026}\def\FrMonthF{04}\def\FrDayF{13}
+\def\ToYearF{2026}\def\ToMonthF{04}\def\ToDayF{19}
+\def\ContentF{中期工作检查}
+
+% 07
+\def\FrYearG{2026}\def\FrMonthG{03}\def\FrDayG{13}
+\def\ToYearG{2026}\def\ToMonthG{05}\def\ToDayG{10}
+\def\ContentG{学生完成毕业设计（论文）初稿写作}
+
+% 08
+\def\FrYearH{2026}\def\FrMonthH{03}\def\FrDayH{11}
+\def\ToYearH{2026}\def\ToMonthH{05}\def\ToDayH{20}
+\def\ContentH{指导教师指导学生修改论文，完成论文定稿、论文查重、系统上传}
+
+% 09
+\def\FrYearI{2026}\def\FrMonthI{05}\def\FrDayI{21}
+\def\ToYearI{2026}\def\ToMonthI{05}\def\ToDayI{29}
+\def\ContentI{指导教师、评阅教师在系统内完成成绩评定工作}
+
+% 10
+\def\FrYearJ{2026}\def\FrMonthJ{06}\def\FrDayJ{01}
+\def\ToYearJ{2026}\def\ToMonthJ{06}\def\ToDayJ{07}
+\def\ContentJ{毕业论文评阅，毕业答辩与成绩综合评定}
+
+% 11
+\def\FrYearK{2026}\def\FrMonthK{06}\def\FrDayK{08}
+\def\ToYearK{2026}\def\ToMonthK{06}\def\ToDayK{09}
+\def\ContentK{完成毕业设计（论文）成绩录入工作}
+
+% 审核时间
+\def\StageOneYear{2026}\def\StageOneMonth{01}\def\StageOneDay{02}
+\def\StageTwoYear{2026}\def\StageTwoMonth{01}\def\StageTwoDay{02}
+
+\begin{document}
+\ProjectPlan
+\end{document} 
