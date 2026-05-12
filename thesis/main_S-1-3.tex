@@ -1,0 +1,109 @@
+% 软件：CTeX套装v3.0.216.3：https://mirrors.tuna.tsinghua.edu.cn/ctex/3.0/
+% 编译：XeLaTeX
+% 编码：UTF-8
+% 模板：淮安大学毕业设计（论文）开题报告
+% 制作：刘绪庆
+% 版本：v1.0
+
+\documentclass[12pt]{../setup/hyit_S-1-3}
+
+%==========================================%
+%           开题报告的封面信息             %
+%==========================================%
+\def\YourName{某某某}        % 填写本人姓名
+\def\YourNumber{12位数的学号}% 填写本人学号
+\def\YourCollege{数理学院}   % 填写所在学院
+\def\YourMajor{金融数学}     % 填写所学专业
+\def\PaperTitleLa{标题第一行}% 标题的第一行
+\def\PaperTitleLb{标题第二行}% 标题的第二行
+\def\SupervisorNameIn{某某某}% 校内导师姓名
+\def\SupervisorNameOut{/}    % 校外导师姓名
+\def\MajorResp{某某某}       % 专业负责人
+\def\OpenYear{2026}          % 开题时间(年)
+\def\OpenMonth{02}           % 开题时间(月)
+\def\OpenDay{26}             % 开题时间(日)
+%==========================================%
+
+%---------------------------------------------------------------------------%
+% 开题报告填写要求：                                                        %
+% 1．开题报告（含“文献综述”）作为毕业设计（论文）答辩委员会对学生答辩资格 %
+%    审查的依据材料之一。此报告应在指导教师指导下，由学生在毕业设计（论文） %
+%    工作前期内完成，经指导教师签署意见及所在专业审查后生效。               %
+% 2．开题报告内容必须用黑墨水笔工整书写或按教务处统一设计的电子文档标准格式 %
+%    （可从教务处网页上下载）打印，禁止打印在其它纸上后剪贴，完成后应及时交 %
+%    给指导教师签署意见。                                                   %
+% 3．“文献综述”应按论文的格式成文，并直接书写（或打印）在本开题报告第一栏 %
+%    目内，学生写文献综述的参考文献原则上应不少于15篇，其中外文不少于2篇。  %
+% 4．有关年月日等日期的填写，应当按照国标GB/T 7408-94《数据元和交换格式、信 %
+%    息交换、日期和时间表示法》规定的要求，一律用阿拉伯数字书写，如“2020年 %
+%    03月20日”或“2020.03.20”或“2020-03-20”。                           %
+%---------------------------------------------------------------------------%
+
+% 第1项：文献综述
+\def\LiteratureSummary{% 参照格式，仅修改 < > 部分
+  \noindent\songtiBF\fontsize{14pt}{21pt}\selectfont
+  <1.1 课题的XXXX> % 可修改部分
+  \songti\fontsize{12pt}{18pt}\selectfont
+  \par
+  <第一段内容……> % 可修改部分
+  \par
+  <第二段内容……> % 可修改部分
+
+  \par
+  \noindent\songtiBF\fontsize{14pt}{21pt}\selectfont
+  <1.x 参考文献> % 可修改部分
+  \songti\fontsize{12pt}{18pt}\selectfont
+  \par\noindent
+  <[1] ........> % 可修改部分
+  \par\noindent
+  <[2] ........> % 可修改部分
+  \par\noindent
+  <[3] ........> % 可修改部分
+}
+
+% 第2项：研究手段
+\def\ResearchTool{% 参照格式，仅修改 < > 部分
+  \noindent\songtiBF\fontsize{14pt}{21pt}\selectfont
+  <2.1 课题的研究内容> % 可修改部分
+  \songti\fontsize{12pt}{18pt}\selectfont
+  \par
+  <第一段内容……> % 可修改部分
+  \par
+  <第二段内容……> % 可修改部分
+
+  \par
+  \noindent\songtiBF\fontsize{14pt}{21pt}\selectfont
+  <2.2 系统设计方案> % 可修改部分
+  \songti\fontsize{12pt}{18pt}\selectfont
+  \par
+  <第一段内容……> % 可修改部分
+  \par
+  <第二段内容……> % 可修改部分
+
+  \par
+  \noindent\songtiBF\fontsize{14pt}{21pt}\selectfont
+  <2.x 课题预期成果> % 可修改部分
+  \songti\fontsize{12pt}{18pt}\selectfont
+  \par
+  <第一段内容……> % 可修改部分
+  \par
+  <第二段内容……> % 可修改部分
+}
+
+% 第3.1项：指导教师对文献综述的评语
+\def\LiteratureSummaryReview{% 参照格式，仅修改 < > 部分
+  <评语的内容……> % 可修改部分
+}
+
+% 第3.2项：指导教师对结果的预测
+\def\ResearchResultPrediction{% 参照格式，仅修改 < > 部分
+  <评语的内容……> % 可修改部分
+}
+
+% 签字时间：A指导教师（开题答辩前2天）、B专业负责人（开题答辩当天）
+\def\YearA{2026}\def\MonthA{03}\def\DayA{13}
+\def\YearB{2026}\def\MonthB{03}\def\DayB{15}
+
+\begin{document}
+\OpenRep
+\end{document} 
