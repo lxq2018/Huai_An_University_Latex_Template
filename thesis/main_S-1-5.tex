@@ -1,0 +1,61 @@
+% 软件：CTeX套装v3.0.216.3：https://mirrors.tuna.tsinghua.edu.cn/ctex/3.0/
+% 编译：XeLaTeX
+% 编码：UTF-8
+% 模板：淮安大学毕业设计（论文）外文资料翻译
+% 制作：刘绪庆
+% 版本：v1.0
+
+\documentclass[12pt]{../setup/hyit_S-1-5}
+
+%===============================================%
+%              外文资料翻译封面                 %
+%===============================================%
+\def\YourName{某某某}           % 填写本人姓名
+\def\YourNumber{12位数的学号}   % 填写本人学号
+\def\YourCollege{数理学院}      % 填写所在学院
+\def\YourMajor{金融数学}        % 填写所学专业
+\def\EnglishFromA{第一行}       % 外文出处行1
+\def\EnglishFromB{第二行}       % 外文出处行2
+\def\ReviewYear{2026}           % 评阅时间(年)
+\def\ReviewMonth{02}            % 评阅时间(月)
+\def\ReviewDay{28}              % 评阅时间(日)
+\def\OrigEP{RFs/S-1-5_原文.pdf} % 外文原文路径
+\def\IfInsertOrigPDF{1}         % 1/0是否插入PDF
+%===============================================%
+%              外文翻译注意事项                 %
+%-----------------------------------------------%
+% 1. 标题：3号黑体，居中                        %
+% 2. 正文：小4号宋体，1.5倍行距                 %
+% 3. 要求：不少于3000汉字                       %
+% 4. 外文中的作者、单位信息：无需翻译           %
+% 5. 外文中的参考文献：无需翻译                 %
+%===============================================%
+
+% 指导老师评语
+\def\ReviewTranslatedPaper{% 仅修改 < > 部分
+  <某某某同学……
+  注意：适当调整评语字数（不太多也不太少），
+  使内容不要超页！
+  >
+}
+
+% 外文翻译全文
+\def\TranslatedPaper{% 仅修改 < > 部分
+
+  \heitiBF\fontsize{16pt}{20pt}\selectfont
+  \begin{center}
+    <译文标题>
+  \end{center}
+
+  \songtiBF\fontsize{12pt}{18pt}\selectfont
+  \section*{1~~标题}
+  \par <第1节的第一段……>
+
+  \subsection*{1.1~~标题}
+  \par <第1.1节的第一段……>
+
+}
+
+\begin{document}
+\EnglishTranslation
+\end{document} 
